@@ -1,0 +1,68 @@
+{
+    "id": {
+        "title": "Syarat dan Ketentuan",
+        "introduction": {
+            "heading": "Sebelum mendaftarkan diri, mohon mahasiswa membaca dan memahami layanan Student Counseling Unit yang meliputi:",
+            "services": [
+                "Pengamatan selama proses konseling",
+                "Penggalian/pengumpulan data yang relevan dengan keluhan yang disampaikan, untuk mendukung proses konseling",
+                "Pengetesan psikologis (saat ini tidak tersedia) atau rujukan ke psikiater (jika diperlukan)",
+                "Pelayanan konseling sesuai dengan keluhan yang disampaikan."
+            ],
+            "closing": "Silahkan memanfaatkan layanan ini sebagai sarana dalam membantu anda :)"
+        },
+        "informedConsent": {
+            "heading": "Lembar persetujuan / Informed Consent",
+            "introduction": "Terkait kegiatan tersebut, maka ada beberapa hal-hal yang perlu kamu perhatikan, yaitu:",
+            "points": [
+                "Waktu pelaksanaan konseling ditentukan sesuai jadwal yang tersedia dan sesuai dengan waktu yang telah dipesan.",
+                "Tempat pelaksanaan konseling di Gedung A Lantai 5 secara luring",
+                "Untuk konseling lanjutan (jika diperlukan), mahasiswa wajib mendaftarkan diri kembali di web dan menyebutkan nama konselornya pada pertemuan terdahulu.",
+                "Jika kondisi belum membaik dalam beberapa kali pertemuan atau kondisi yang urgent, maka konselor dapat menyarankan dan atau merujuk mahasiswa ke psikiater atau penanganan lebih lanjut.",
+                "Jika terdapat indikasi kekerasan seksual atau memuat unsur tindakan pidana maka, layanan konseling dapat bekerjasama dengan beberapa unit di kampus seperti unit pencegahan dan penanganan kekerasan seksual (PPKS), atas persetujuan mahasiswa.",
+                "Apabila membutuhkan layanan konseling untuk pertemuan selanjutnya maka, mahasiswa wajib mendaftarkan diri kembali dan memilih sesuai dengan jadwal yang masih tersedia.",
+                "Seluruh kegiatan konseling dilakukan oleh konselor yang telah bertugas dibidangnya.",
+                "Selama proses konseling seluruh kerahasiaan data yang diperoleh dijamin oleh konselor dan Student Counseling Unit (SCU), tidak disebarkan, dan dijamin kerahasiaannya.",
+                "Mahasiwa yang memerlukan layanan konseling berasal dari seluruh kalangan, mencakup layanan kepada mahasiswa regular, blanded, dan International, tanpa memandang jenis kelamin, suku, agama, dan ras.",
+                "Bilamana diperlukan dalam kondisi mendesak, data yang diperoleh dalam proses konseling dapat diketahui oleh Wakil Dekan I & II, Ketua Prodi, Dosen Pembimbing Akademik, Dosen Pembimbing Skripsi terutama jika berkaitan dengan kelangsungan studi, kepentingan dalam peningkatan mutu Universitas Nusa Putra dan dapat dipergunakan untuk kepentingan ilmiah dengan kaidah tetap menjaga kerahasiaan identitas mahasiswa."
+            ],
+            "closing": "Jika kamu lanjut mendaftarkan diri, artinya kamu telah memahami dan menyetujui penjelasan di atas.",
+            "contact": "Silahkan konfirmasi pendaftaran di nomor Whatsapp +62822 1505 7531"
+        },
+        "checkbox": "Saya telah membaca dan menyetujui Syarat dan Ketentuan yang berlaku",
+        "closeButton": "Tutup"
+    },
+    "en": {
+        "title": "Terms and Conditions",
+        "introduction": {
+            "heading": "Before registering, students are asked to read and understand the Student Counseling Unit services which include:",
+            "services": [
+                "Observation during the counseling process",
+                "Collecting data relevant to the complaint submitted, to support the counseling process",
+                "Psychological testing (not currently available) or further recommendations (if necessary)",
+                "Counseling services in accordance with the complaints submitted"
+            ],
+            "closing": "Please use this service as a means to help you :)"
+        },
+        "informedConsent": {
+            "heading": "Informed Consent",
+            "introduction": "Regarding this activity, there are several things you need to know:",
+            "points": [
+                "The time for counseling is determined according to the schedule available and according to the time you have ordered (will be confirmed by SCU).",
+                "The place for counseling is in the Building A, 5th Floor, service is offline",
+                "For further counseling (if necessary), students are required to re-register on the website and mention the name of their counselor at the previous meeting.",
+                "If the condition has not improved in several meetings or the condition is urgent, the counselor can suggest and/or refer the student/client to a psychiatrist or further treatment.",
+                "If there are indications of sexual violence or contain elements of a criminal act, the counseling service can collaborate with several units on campus such as Preventing and Handling Sexual Violence unit, with the student's approval.",
+                "If you need counseling service for the next meeting, students are required to register again and choose according to the schedule that is still available.",
+                "All counseling activities are carried out by counselors who have served in their fields.",
+                "During the counseling process, all confidentiality of data obtained is guaranteed by the counselor and the Student Counseling Unit (SCU), not shared, and its confidentiality is guaranteed.",
+                "Students who need counseling service come from regular, blended and international class/students, regardless of gender, ethnicity, religion and race.",
+                "If necessary in urgent conditions, the data obtained in the counseling process can be known by the Deputy Dean I & II, Head of Study Program, Academic Supervisor, Thesis Supervisor, especially if it is related to the continuation of studies, interests in improving the quality of Nusa Putra University and can be used for the benefit of scientific with the principle of maintaining the confidentiality of the student's identity."
+            ],
+            "closing": "If you continue to register, it means you have understood and agreed to the explanation above.",
+            "contact": "Please confirm registration on WhatsApp number +62822 1505 7531"
+        },
+        "checkbox": "I have read and agree to the applicable Terms and Conditions",
+        "closeButton": "Close"
+    }
+}
