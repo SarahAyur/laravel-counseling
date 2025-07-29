@@ -107,3 +107,60 @@
 
 @include('Chatify::layouts.modals')
 @include('Chatify::layouts.footerLinks')
+
+<script>
+// Cek status chat setiap 30 detik
+function setupChatStatusChecker() {
+    // Dapatkan ID user dari URL
+    const urlPath = window.location.pathname;
+    const urlSegments = urlPath.split('/');
+    const lastSegment = urlSegments[urlSegments.length - 1];
+    
+    // Hanya lakukan cek jika ada ID user
+    if (lastSegment && !isNaN(lastSegment)) {
+        // Set interval untuk polling setiap 30 detik
+        const intervalId = setInterval(() => {
+            // AJAX call ke endpoint checkChatStatus
+            $.ajax({
+                url: "{{ route('checkChatStatus') }}",
+                method: "POST",
+                data: {
+                    _token: "{{ csrf_token() }}",
+                    id: lastSegment
+                },
+                success: function(response) {
+                    console.log("Chat status check:", response);
+                    
+                    // Jika chat disabled, reload halaman
+                    if (!response.chat_enabled) {
+                        console.log("Chat disabled, reloading page...");
+                        window.location.href = "{{ route('dashboard') }}";
+                    }
+                },
+                error: function(xhr) {
+                    console.error("Error checking chat status:", xhr);
+                }
+            });
+        }, 30000); // 30 detik
+        
+        // Simpan interval ID agar bisa di-clear jika perlu
+        window.chatStatusCheckerId = intervalId;
+    }
+}
+
+// Jalankan ketika dokumen siap
+$(document).ready(function() {
+    setupChatStatusChecker();
+    
+    // Tambahkan listener untuk perubahan URL (jika ada fitur SPA)
+    window.addEventListener('popstate', function() {
+        // Clear interval yang ada jika ada
+        if (window.chatStatusCheckerId) {
+            clearInterval(window.chatStatusCheckerId);
+        }
+        
+        // Setup ulang
+        setupChatStatusChecker();
+    });
+});
+</script>

@@ -135,6 +135,45 @@
                         </div>
                     @endif
 
+                    <!-- Detail Mahasiswa -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6 mt-6">
+                        <div class="p-4 border-b border-gray-200 bg-gray-50">
+                            <h3 class="font-medium text-gray-700">Informasi Mahasiswa</h3>
+                        </div>
+                        <div class="p-4">
+                            <dl class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Nama Mahasiswa</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->name ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">NIM</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->nim ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Email</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->email ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">WhatsApp</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->whatsapp_number ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Program Studi</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->prodi ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Semester</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->semester ?? '-' }}</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Tipe Mahasiswa</dt>
+                                    <dd class="mt-1 text-sm text-gray-900">{{ $session->mahasiswa->student_type ?? '-' }}</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
                     <!-- Form Answers Section -->
                     @if($answers->count() > 0)
                         <div class="mt-8">

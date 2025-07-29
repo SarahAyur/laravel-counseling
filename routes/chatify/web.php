@@ -9,6 +9,7 @@
  */
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Chat\CustomMessagesController;
 
 /*
 * This is the main app route [Chatify Messenger]
@@ -96,12 +97,8 @@ Route::post('/updateSettings', 'MessagesController@updateSettings')->name('avata
  */
 Route::post('/setActiveStatus', 'MessagesController@setActiveStatus')->name('activeStatus.set');
 
-
-
-
-
-
-/*
+// Tambahkan route ini sebelum route /{id}
+Route::post('/checkChatStatus', [CustomMessagesController::class, 'checkChatStatus'])->name('checkChatStatus');/*
 * [Group] view by id
 */
 Route::get('/group/{id}', 'MessagesController@index')->name('group');
@@ -114,15 +111,13 @@ Route::get('/group/{id}', 'MessagesController@index')->name('group');
 * e.g. - The commented routes below :
 */
 // Route::get('/route', function(){ return 'Munaf'; }); // works as a route
-Route::get('/{id}', 'MessagesController@index')->name('user');
-// Route::get('/route', function(){ return 'Munaf'; }); // works as a user id
+Route::get('/{id}', [CustomMessagesController::class, 'index'])->name('user');// Route::middleware(['auth', 'verified'])->group(function () {
+//     // ...existing routes...
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    // ...existing routes...
+//     // Add Chatify Routes with custom prefix
+//     Route::prefix('chat')->group(function () {
+//         Route::get('/user/{id}', 'Chatify\Http\Controllers\MessagesController@index')->name('chatify.user');
+//         // Other chatify routes...
+//     });
+// });
 
-    // Add Chatify Routes with custom prefix
-    Route::prefix('chat')->group(function () {
-        Route::get('/user/{id}', 'Chatify\Http\Controllers\MessagesController@index')->name('chatify.user');
-        // Other chatify routes...
-    });
-});

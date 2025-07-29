@@ -24,7 +24,12 @@ class User extends Authenticatable
         'role',
         'is_admin',
         'is_active',
-        'image'
+        'image',
+        'nim',
+        'whatsapp_number',
+        'prodi',
+        'semester',
+        'student_type'
     ];
 
     /**
